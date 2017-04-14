@@ -4,13 +4,13 @@
 In this challenge, we'll be working with Active Record models in the Rake console.  Our focus will be on inserting new records into the database using the methods provided by Active Record.
 
 ```ruby
-class Dog < ActiveRecord::Base
+class Dog < ApplicationRecord
 end
 ```
 
 *Figure 1.*  Code for the class `Dog`.
 
-We will be working primarily with a pre-written, empty `Dog` class (see Figure 1 and the file `app/models/dog.rb`).  There are no methods defined within the class itself.  The behaviors that we'll explore in this challenge are inherited through its parent class, `ActiveRecord::Base`.
+We will be working primarily with a pre-written, empty `Dog` class (see Figure 1 and the file `app/models/dog.rb`).  There are no methods defined within the class itself.  The behaviors that we'll explore in this challenge are inherited through its parent class, `ApplicationRecord`.
 
 Among these inherited methods, are class methods for inserting records into the database.  Just as it is the responsibility of our plain Ruby classes to instantiate new instances of themselves, Active Record model classes are also responsible for instantiating instances of themselves.  We'll take a look at different approaches that Active Record provides.
 
